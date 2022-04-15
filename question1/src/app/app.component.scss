@@ -7,6 +7,14 @@ div[class*=" col"] {
   min-width: 100%;
   .row {
     max-width: 100%;
+
+    input,
+    select,
+    span {
+      height: 2em;
+      width: 10em;
+      font-size: 3.5vh;
+    }
     .first-col {
       max-width: 200px;
       min-width: 200px;
@@ -19,4 +27,16 @@ div[class*=" col"] {
       min-width: 300px;
     }
   }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }
