@@ -7,4 +7,4 @@ then
 `npm install`
 
 then
-`ng server --o`
+`ng serve --o`
