@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'Section 2 : pretest';
+  title = 'Pretest: Sect.2 Q.1';
   inputNum: number | undefined;
   selectedCalType: string = 'isPrime';
   result: string = '';
