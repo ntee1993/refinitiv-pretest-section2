@@ -1,5 +1,10 @@
 # refinitiv-pretest-section2
 
-cd <question folder>
-npm install
-ng server --o
+run
+`cd <question folder>`
+
+then
+`npm install`
+
+then
+`ng server --o`
