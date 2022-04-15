@@ -1,0 +1,22 @@
+div[class^="col"],
+div[class*=" col"] {
+  border: 0.5px solid black;
+}
+
+.container {
+  min-width: 100%;
+  .row {
+    max-width: 100%;
+    .first-col {
+      max-width: 200px;
+      min-width: 200px;
+    }
+    .middle-col {
+      min-width: 100px;
+    }
+    .last-col {
+      max-width: 300px;
+      min-width: 300px;
+    }
+  }
+}
