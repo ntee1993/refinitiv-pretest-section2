@@ -11,16 +11,17 @@ div[class*=" col"] {
     input,
     select,
     span {
-      height: 2em;
-      width: 10em;
-      font-size: 2vh;
+      font-size: 100%;
+      width: max-content;
     }
+
     .first-col {
       max-width: 200px;
       min-width: 200px;
     }
-    .middle-col {
+    .mid-col {
       min-width: 100px;
+      max-width: 100%;
     }
     .last-col {
       max-width: 300px;
