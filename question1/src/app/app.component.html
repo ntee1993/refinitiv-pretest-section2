@@ -1,0 +1,20 @@
+<div class="container h-100 m-0 p-0">
+  <div class="row h-100 m-0 p-0">
+    <div class="first-col col p-0">
+      <input
+        placeholder="enter any number"
+        type="number"
+        id="inputNum"
+        [(ngModel)]="inputNum"
+        (focusout)="changeHandle()"
+      />
+    </div>
+    <div class="mid-col col p-0">
+      <select id="calType" [(ngModel)]="selectedCalType" (change)="changeHandle()">
+        <option value="isPrime" selected>isPrime</option>
+        <option value="isFibanacci">isFibanacci</option>
+      </select>
+    </div>
+    <div class="last-col col p-0"><span id="result">{{result}}</span></div>
+  </div>
+</div>
