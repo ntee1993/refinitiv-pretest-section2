@@ -1,0 +1,25 @@
+<table class="table table-striped text-center">
+  <thead class="bg-light">
+    <tr class="table-info">
+      <th class="fw-bold pb-0">
+        <h3>Categories</h3>
+        <mdb-form-control class="mb-2">
+          <input
+            mdbInput
+            type="text"
+            id="filterInput"
+            class="form-control"
+            [(ngModel)]="filterInput"
+            (input)="listFilter()"
+          />
+          <label mdbLabel class="form-label" for="filterInput">filter</label>
+        </mdb-form-control>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let e of list">
+      <td>{{ e }}</td>
+    </tr>
+  </tbody>
+</table>

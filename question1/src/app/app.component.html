@@ -10,11 +10,17 @@
       />
     </div>
     <div class="mid-col col h-100 p-0">
-      <select id="calType" [(ngModel)]="selectedCalType" (change)="changeHandle()">
+      <select
+        id="calType"
+        [(ngModel)]="selectedCalType"
+        (change)="changeHandle()"
+      >
         <option value="isPrime" selected>isPrime</option>
         <option value="isFibanacci">isFibanacci</option>
       </select>
     </div>
-    <div class="last-col col h-100 p-0"><span id="result">{{result}}</span></div>
+    <div class="last-col col h-100 p-0">
+      <span id="result">{{ result }}</span>
+    </div>
   </div>
 </div>
