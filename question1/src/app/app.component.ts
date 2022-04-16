@@ -12,10 +12,10 @@ export class AppComponent {
   result: string = '';
 
   changeHandle() {
-    if (this.inputNum) {
-      if (this.inputNum >= 0) {
+    if (this.inputNum || this.inputNum === 0) {
+      if (this.inputNum > 0) {
         this.inputNum = Math.round(this.inputNum);
-      } else {
+      } else if (this.inputNum < 0) {
         this.inputNum = 1;
       }
 
@@ -30,6 +30,8 @@ export class AppComponent {
           this.result = '';
           break;
       }
+    } else {
+      this.result = '';
     }
   }
 
